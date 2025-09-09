@@ -11,3 +11,31 @@ p.143~153 activation function 역할, 용어 개념 등 여러 함수 역할 중
 iris.data 옮기기
 이후 사이버캠퍼스에서 준 ml코드 활용해 iris.data 경로 바꿔서 코드 실행.
 ml코드 파일 읽어 들인데까지 복붙후 print(df)
+기존 프로그램과 딥러닝의 차이점 : 알고리즘을 프로그래머가 짜는가 아니면 데이터를 보고 입력값과 출력값에 따라 학습하는가.
+해당 파일에선 x와 y로 나눈 뒤 test와 train으로 나눔. 
+dt부터 모델 만들기, 그 후 학습.
+
+당뇨병으로 다시 만들기
+(***.columns 로 분류명 알아내기)
+1. 해당 csv파일에는 이미 columns가 있으므로 df 선언시 header = none, 등등 빼기
+2. 해당 파일에선 마지막 값이 label이 아닌 outcome이므로 바꾸기. (마지막 값 = 결정값)
+
+breast_cancer.csv로 다시 만들기
+test값과 train값 비교 등등.
+predict값과 test값 비교 등.
+
+dmodel = DecisionTreeClassifier(random_state = 42)
+dmodel.fit(X_train, y_train)
+dt_y_pred = dt.predict(X_test)
+
+와 같은 방식으로 dmodel과의 실제값 비교.
+
+car evaluation파일 경우
+해당 파일에서는 결과값이 다른것들처럼 숫자가 아닌 문자열로 생성되어있음.
+그래서 해당 값들을 변환해주어야함. 숫자로 변환!
+chatgpt 도움 받으면 좋음. csv파일을 넣고 해당 파일의 데이터세트를 숫자로 변환하는 숫자코드를 받는 등.
+label encorder() 사용하는 방식.
+깃허브에 내가 올린 형식은 하나의 분류명만 바꾸는 형식.
+컬럼명 모두를 바꾸려면 for문으로 바꾸는 방식.
+ex) for column in columns : ~~~~
+교수님 깃허브 참고하면 좋음.

@@ -48,3 +48,7 @@ price 나누고 x_test, x_train 총 4개로 나눠 진행.
 MSE, MAE, R^2등으로 출력값. 
 분류의 평가기준 = accurancy
 regression의 평가기준 = mse 가 작을수록.
+
+
+diabetes regression 진행
+bmi에 대한 regression진행. 

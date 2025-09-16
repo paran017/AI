@@ -28,3 +28,9 @@ p.32 전이학습, transfer learning, 등등 나중에 배움.
 p.54 손실함수, 옵티마이저 용어 중요
 p.86 정확도 재현율 정밀도 중요.
 
+분류는 정확도와 재현율 구하기.
+회귀는 mse 구하기.
+
+imbalancedata 의미. (covid를 예시로, 초반 측정시 1000/10/10/30으로 볼때, 정확도는 1010/1050이나, 초반에는 false negative의 데이터 중요도가 높은 경우이고, 그에 따른 경우를 상정해야함, 즉 accurancy는 상황에 따라 중요도가 다름)
+(1000/10/10/30은 각각 true positive/true negative/false positive/false negative를 의미)
+imbalancedata를 위해 f1-score가 있음.

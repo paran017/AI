@@ -51,6 +51,7 @@ ex : 축구팀에서 3백은 피지컬이 세고 윙어는 빨라야함. 스트�
 
 winequality white wine
 pd.readexcel 
-
+logistic regression, randomforest, knn, deicisontree
+기울기 절편값 구하
 
 

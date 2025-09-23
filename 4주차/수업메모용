@@ -84,9 +84,24 @@ softmax 찾아보자
 27라인의 history = model.fit이 fit하는것. 20%떼서 알아서 만들어줘라 뭐 이런 의미. 
 
 교수님 코드 바탕으로 wine 다시 해보기
+breast_cancer 코드바탕으로 해보기. 과제
 
+note 4장 선형회귀 이론수업
 
+loss를 줄이며 기울기를 구해나가는게 중요쟁점.
+딥러닝은
+1. 순정파 forward profication
+2. backward profication
+3. loss function
+4. activate function
+5. optimization
+위 5가지가 중요. 특히 lossfunction이 제일 중요
 
+이 중에서 loss function 설명 중요. mse 도 loss function의 예시. 
+데이터 입력 후 기울기를 구하는것이 순정파(forward profication), 이로인해 나온 1차그래프로 손실값을 구해 기울기 조정. 이런것들을 계속 업데이트해 손실을 줄여나가는게 loss function
+mse가 하나의 예시. back profication은 이러한 weight를 조정할때 얼마나 조정할까를 정하는 것.appoach는 이러한 조정을 몇번 했는지를 카운트하는것.
+즉 포워드로 손실값 구하고 이러한걸로 backward를 하고, 반복하는것. 즉 머신러닝은 1번만 진행해 손실을 조정할수 없으나 딥러닝은 계속 반복해서 손실을 줄여나가는 형식.
+forward -> loss -> backward -> optimizor
 
 
 

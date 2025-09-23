@@ -56,3 +56,40 @@ logistic regression, randomforest, knn, deicisontree
 기울기 절편은 혼공책 실습예제 3-2 참조
 print(lr.coef_, lr.intercept_) 이거
 
+
+딥러닝 시작
+만들었던 소스로 딥러닝 시작.
+
+우선 예제는 교수님 aiclass  DL_Classification_sample.ipynb파일
+
+1. 딥러닝 vs 머신러닝
+
+x y -> x_train, x_test, y_train, y_test 여기는 공통사항
+
+1)딥러닝에서는 label을 one-hol-encoding으로 바꾼다. one-hol-encoding은 012 를 001 010 100 으로 바꾸는 형식. label사이의 상관관계를 없애기 위해 이러한 방식 채용.
+1번이 고양이, 2번이 개, 3번이 소일 경우 개와 고양이의 경우 소보다 더 가까우므로 bias에 영향을 끼침. 
+2)딥러닝은 train데이터를 train과 validation 으로 나눔. (용어 확실치 않으니 찾아볼것)
+cross validation(예를 들어 10명이 있고 1명이 테스트일때 10번의 테스트를 돌려 여러번 교차검증하는것)
+3) x값도 numpy로 바꿔줘야한다. 
+
+소스기준 
+앞의 틀은 똑같으나 7번라인에서 one-hol-encoding으로 바꾸는 예시. 이로인해 y의 label을 바꾸는 것.
+8번라인의 x=x.value가 numpy로 바꾸는것.
+
+16번라인 dropout 필요 없음.
+15번라인에서 input 에 피쳐의 개수. 피쳐의 개수 신경쓰기 싫으면 숫자 없애면 됨
+와인의 경우 18라인의 y.shpae가 7. 신경쓰기 싫으면 숫자 없애면 됨.
+softmax 찾아보자
+
+27라인의 history = model.fit이 fit하는것. 20%떼서 알아서 만들어줘라 뭐 이런 의미. 
+
+교수님 코드 바탕으로 wine 다시 해보기
+
+
+
+
+
+
+
+
+

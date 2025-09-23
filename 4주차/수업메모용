@@ -53,5 +53,6 @@ winequality white wine
 pd.readexcel 
 logistic regression, randomforest, knn, deicisontree
 기울기 절편값 구하
-
+기울기 절편은 혼공책 실습예제 3-2 참조
+print(lr.coef_, lr.intercept_) 이거
 

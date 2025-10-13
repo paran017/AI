@@ -90,8 +90,8 @@ note 4장 선형회귀 이론수업
 
 loss를 줄이며 기울기를 구해나가는게 중요쟁점.
 딥러닝은
-1. 순정파 forward profication
-2. backward profication
+1. 순정파 forward profigation
+2. backward profigation
 3. loss function
 4. activate function
 5. optimization

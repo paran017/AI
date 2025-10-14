@@ -80,6 +80,34 @@ p.185 실습 참고.
 fashion dense layer cnn 해보기
 3개 분류.
 
+추가
+텐서플로에서는 파이토치를 torch.tensor로 로드함
+ex)
+ai-class car_evaluation_pytorch.ipynb
+x_train = torch.tensor(X_train, dtype=torch.float32)
+파이토치의 차이점 = valid split으로 사용할 수 없으니 프레임 벨리드, 텍스트로 바꾼다.
+파이토치에서는 test와 train 두번 돌림.
+파이토치에서는 backward 명시. 좀더 직관적
+
+
+전이학습
+pre-trained model : 잘 계산된 유명한 네트워크를 가져다 쓰는것
+1. 잘 훈련된 네트워크(가중치)를 가져다 쓰자.
+2. 네트워크 앞부분은 일반적인 특징, 뒤로 갈수록 구체적인 특징이므로 뒤부분을 잘라서 따로 쓰자.
+3. freezing : 앞의 부분은 따로 계산을 안하고 얼림. 뒤에만 학습. 이로인해 빠른 속도를 얻음.
+4. fine_tuning : 뒤에만 학습함으로인해 생기는 맞지 않는 것들을 조정하는것. 미세조정. 
+
+  transfer learning : 서로 다른 도메인에 대해 일치시키는 것을 transfer learning이라고 말함.
+
+책 p.183 소스
+p.201 그림 5-32 해당 모델들이 pre-trained model들. 잘 훈련된 예시.
+p.211 model.lesson 등등.
+p.228 전이학습 , 미세조종기법. 설명 보기.
+p.229 그림 5-44 중요
+
+
+
+
 
 
 

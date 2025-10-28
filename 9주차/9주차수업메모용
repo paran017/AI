@@ -21,3 +21,5 @@ ex : 전날 50개의 빵이 팔린 경우 다음날 100개를 미리 만들지 �
 make_sample 함수 중요.
 교수님 github 예제 rnn_llstm
 해당 파일에서 x,y train 등등 하고 mse 구하고 그래프 그리고 rnn, lstm 모델 구별. 
+
+TESLA파일에서 OPEN, HIGH, LOW, CLOSE로 CLOSE예측.
